@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>github page</title>
-  </head>
-  <body>
-    <h1>Fortes1219</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>github page</title>
+</head>
+
+<body>
+  <div style="display: block; width: 100%;">
+    <button id="play">play</button>
+    <button id="reload">reload</button><br>
+    <span class="determination_device">
+      <p id="screen_width"></p>
+      <p id="screen_height"></p>
+    </span>
+  </div>
+</body>
+<script>
+  const deviceAgent = function () {
+    let screenWidth = document.getElementById('screen_width');
+    let screenHeight = document.getElementById('screen_height');
+    screenWidth.innerHTML = window.innerWidth;
+    screenHeight.innerHTML = window.innerHeight;
+    return (
+      screenWidth.innerHTML, screenHeight.innerHTML
+    );
+  }
+  deviceAgent();
+  window.addEventListener("resize", deviceAgent);
+</script>
+<style>
+  .outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--bg-color-1);
+  }
+
+  .determination_device {
+    padding: 0 1rem;
+  }
+
+  /* Samsung Galaxy S9+, Viewport 2960 x 1440 */
+  /* Pixel Ratio 4K, Resolution 529 ppi */
+  @media
+
+  /* portrait */
+  only screen and (max-device-width: 740px) and (min-device-width: 360px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+
+    /* ...styles here */
+    .determination_device:after {
+      content: "Samsung Galaxy S9+, Portrait";
+    }
+  }
+
+  @media
+
+  /* landscape */
+  only screen and (max-device-width: 740px) and (min-device-width: 360px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+
+    /* ...styles here */
+    .determination_device:after {
+      content: "Samsung Galaxy S9+, Landscape";
+    }
+  }
+</style>
+
 </html>
