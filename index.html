@@ -45,6 +45,63 @@
     padding: 0 1rem;
   }
 
+  /* iPhone X & XS, Viewport 812 x 375 */
+/* Pixel Ratio 3.0, Resolution 458 ppi */
+
+@media /* portrait */
+only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait){
+    /* ...styles here */
+    .outer{
+        justify-content: var(--portrait-video-adjust);
+    }
+    .determination_device:after{
+        content: "iPhone X or XS, Portrait";
+    }
+}
+
+@media /* landscape */
+only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape){
+    /* ...styles here */
+    .determination_device:after{
+        content: "iPhone X or XS, Landscape";
+    }
+}
+
+/* iPhone XS MAX, Viewport 896 x 414 */
+/* Pixel Ratio 3.0, Resolution 458 ppi */
+
+@media /* portrait */
+only screen
+and (max-device-width: 895px)
+and (min-device-width: 414px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait){
+    /* ...styles here */
+    .determination_device:after{
+        content: "iPhone XS MAX, Portrait";
+    }
+}
+
+@media /* landscape */
+only screen
+and (max-device-width: 895px)
+and (min-device-width: 414px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape){
+    /* ...styles here */
+    .determination_device:after{
+        content: "iPhone XS MAX, Landscape";
+    }
+}
+
   /* Samsung Galaxy S9+, Viewport 2960 x 1440 */
   /* Pixel Ratio 4K, Resolution 529 ppi */
   @media
