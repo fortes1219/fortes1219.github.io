@@ -58,41 +58,18 @@
 
 	/* portrait 360 x 568 */
 
-	@media only screen and (max-width: 360px) and (min-width: 320px) and (min-height: 512px) and (max-height: 512px) and (orientation: portrait) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(2) translate(0px, 6.5vh);
-			/* 炸金花 */
-			/* transform: scale(1.5) translate(0px, 6.5vh); */
-    }
-
+	@media only screen and (max-width: 360px) and (min-width: 320px) and (max-height: 568px) and (min-height: 512px) and (orientation: portrait) {
     .determination_device:after {
-      content: "Sony XA1 & ZenFone 3 MAX";
+      content: "(Portrait) Sony XA1 & ZenFone 3 MAX";
     }
 	}
 
 	/* landscape 592 x 336 */
 
-	@media only screen and (max-width: 592px) and (min-width: 336px) and (orientation: landscape) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 6.5vh);
-
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, 6.5vh); */
-		}
-	}
-
-	/* landscape 592 x 280, with URL bar */
-
-	@media only screen and (max-width: 592px) and (min-width: 280px) and (orientation: landscape) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 0);
-
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, -6vh); */
-		}
+	@media only screen and (max-width: 592px) and (min-width: 512px) and (max-height: 336px) and (min-height: 280px) and (orientation: landscape) {
+		.determination_device:after {
+      content: "(Landscape) Sony XA1 & ZenFone 3 MAX";
+    }
 	}
 
 	/*
@@ -103,51 +80,20 @@
 
 	/* portrait 360 x 668  */
 
-	@media only screen and (max-width: 668px) and (min-width: 360px) and (orientation: portrait) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 6.5vh);
-
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, 6.5vh); */
-		}
-	}
-
-	/* portrait 360 x 612, with URL bar */
-
-	@media only screen and (max-width: 612px) and (min-width: 360px) and (orientation: portrait) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 6.5vh);
-
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, 6.5vh); */
-		}
+	@media only screen and (max-width: 360px) and (min-width: 336px) and (max-height: 668px) and (min-height: 612px) and (orientation: portrait) {
+		.determination_device:after {
+      content: "(Portrait) Samsung Galaxy S9 or S9+";
+    }
 	}
 
 	/* landscape 692 x 336 */
 
-	@media only screen and (max-width: 692px) and (min-width: 336px) and (orientation: landscape) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 6.5vh);
+		@media only screen and (max-width: 692px) and (min-width: 612px) and (max-height: 336px) and (min-height: 280px) and (orientation: portrait) {
+		.determination_device:after {
+      content: "(Landscape) Samsung Galaxy S9 or S9+";
+    }
+  }
 
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, 6.5vh); */
-		}
-	}
-
-	/* landscape 592 x 280, with URL bar */
-
-	@media only screen and (max-width: 592px) and (min-width: 280px) and (orientation: landscape) {
-		#video video {
-			/* 牛牛 */
-			transform: scale(1.3) translate(0, 0);
-
-			/* 炸金花 */
-			/* transform: scale(1) translate(0, -6vh); */
-		}
-	}
 </style>
 
 </html>
