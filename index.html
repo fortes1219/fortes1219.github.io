@@ -17,6 +17,10 @@
       <p id="screen_height"></p>
     </span>
   </div>
+  <div class="contents">
+    <h2>Good Defaults</h2>
+    <p>Supply reasonable default values for the fields in question. Show these defaults to the user, so that they know they aren't required to fill them in. Indicate clearly that the value can be changed by the user, if they so desire.</p>
+  </div>
 </body>
 <script>
   const deviceAgent = function () {
@@ -32,6 +36,21 @@
   window.addEventListener("resize", deviceAgent);
 </script>
 <style>
+  :root {
+    color-scheme: light dark;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #222;
+    }
+    h2 {
+      color: #eee;
+    }
+    p{
+      color: #fff;
+    }
+  }
   body{
     min-height: 1000px;
   }
